@@ -1,5 +1,5 @@
 *
 
 !.gitignore
-!(*.pdf)
-!(*.tex)
+!*.pdf
+!*.tex

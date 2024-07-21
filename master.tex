@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\usepackage[
+top = 2.0cm,
+bottom = 2.0cm,
+left = 1.8cm,
+right = 1.8cm
+]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Jasjaap Dua} \\
+    \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8630045875 ~ \href{mailto:jasjaap.dua@mail.utoronto.ca}{\raisebox{-0.2\height}\faEnvelope\  \underline{jasjaap.dua@mail.utoronto.ca}} ~ 
+    \href{https://linkedin.com/in/JasjaapDua}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/JasjaapDua}}
+    \vspace{-8pt}
+\end{center}
+
+\vspace{0.001cm}
+
+%-----------EDUCATION-----------
+\section{Education}
+      \resumeSubHeadingListStart
+        \resumeSubheading
+          {University of Toronto}{Toronto, ON}
+          {Bachelor of Applied Science in Computer Engineering + PEY}{September 2020 - June 2026}
+        \resumeSubItem{Intended Minor in Artificial Intelligence Engineering}
+        \resumeSubItem{\textbf{Relevant Coursework: }Data Structures \& Algorithms, Operating Systems, Introduction to Databases, Software Communication \& Design, Introduction to Machine Learning, Computer Networks I, Digital Systems, Computer Organisation, Introduction to Control Systems}
+      \resumeSubHeadingListEnd
+  
+  %-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Python, SQL, MATLAB} \\
+     \textbf{Platforms/Technologies}{: Git, PostgreSQL, Unix/Linux, GNU Debugger, NumPy, Sci-kit Learn, PyTorch} \\
+     \textbf{Technical}{: Agile development, object oriented programming, debugging}
+    }}
+ \end{itemize}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+% -----------ECE297 PROJECT-----------
+    \resumeSubheading
+      {GIS Application Team Technical Lead}{January 2023 -- April 2023}
+      {Software Communication \& Design}{University of Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Led a team as \textbf{Technical Lead} to design and implement a Geographic Information System in \textbf{C++} by using the \textbf{OpenStreetMap Database}.}
+        \resumeItem{Employed \textbf{agile methodologies} to deliver milestones, ensuring iterative and incremental progress.}
+        \resumeItem{Developed backend functions for efficient data handling and computation and frontend elements using \textbf{Glade, GTK and EZGL} for visualisation of terrain, streets, buildings, and points of interest.}
+        \resumeItem{Implemented efficient pathfinding algorithms \textbf{(Dijkstra and A*)}, achieving route calculations in \textbf{under 40 milliseconds}.}
+      \resumeItemListEnd
+
+% -----------ECE297 PROJECT END-----------
+
+% -----------ECE243 FINAL PROJECT-----------
+    \resumeSubheading
+      {ARM-A9 FPGA Platforming Game Developer}{January 2023 -- April 2023}
+      {Computer Organisation}{University of Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Collaborated in a two-person team, ensuring effective communication and dividing tasks to successfully create an \textbf{ARM-A9 FPGA} version of the platforming game Celeste (PICO-8).}
+        \resumeItem{Developed a \textbf{C++ parser} to convert \textbf{ImageMagick} files to C-arrays, enabling efficient buffering of sprites onto the \textbf{VGA display}, optimising graphical performance.}
+        \resumeItem{Integrated support for \textbf{PS/2 keyboard} and on-board FPGA buttons using \textbf{polling} and \textbf{interrupt} methods to control the in-game sprite, ensuring smooth user input and interaction.}
+        \resumeItem{Engineered robust in-game collision detection and handling for walls and obstacles, achieving seamless sprite respawns upon in-game death to maintain continuous gameplay.}
+    \resumeItemListEnd
+% -----------ECE243 FINAL PROJECT END-----------
+
+
+% -----------ECE361 LABS-----------
+    \resumeSubheading
+      {File Transfer Application Developer}{January 2024 -- April 2024}
+      {Computer Networks I}{University of Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a \textbf{client-server} file transfer application in \textbf{C} using \textbf{UDP sockets} for communication.}
+        \resumeItem{Developed robust error handling with \textbf{ACK and NACK mechanisms}, ensuring \textbf{reliable data transmission}.}
+        \resumeItem{Simulated packet loss using random number generation, enhancing the application's resilience to network conditions.}
+        \resumeItem{Employed \textbf{GNU debugger} for thorough debugging of both client and server applications, ensuring \textbf{stability and performance}.}
+      \resumeItemListEnd
+% -----------ECE361 LABS END-----------
+
+% -----------ECE344 LABS-----------
+    \resumeSubheading
+      {Library Code Development}{September 2023 -- December 2023}
+      {Operating Systems}{University of Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Created a custom implementation of the \textbf{ps} command for \textbf{Unix} systems, enhancing process management capabilities.}
+        \resumeItem{Developed a \textbf{process manager} using \textbf{fork} and \textbf{exec} system calls, including a \textbf{subreaper} for zombie process management.}
+        \resumeItem{Built a \textbf{concurrent, thread-safe hash table} using \textbf{mutexes}, experimenting with different levels of granularity for performance optimisation and conducting performance analysis across single and multiple-core CPU environments.}
+      \resumeItemListEnd
+% -----------ECE344 LABS END-----------
+
+% -----------ECE421 LABS-----------
+    \resumeSubheading
+      {Machine Learning Algorithms}{January 2024 -- April 2024}
+      {Introduction to Machine Learning}{University of Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Developed and evaluated a robust \textbf{linear regression} model and \textbf{Perceptron} algorithm using \textbf{NumPy} and linear algebra, benchmarked against \textbf{Scikit-Learn's} implementation to predict diabetes progression.}
+        \resumeItem{Implemented a \textbf{feedforward neural network} using \textbf{PyTorch} for image classification on the notMNIST dataset, including custom data loading, model training, and accuracy evaluation.}
+        \resumeItem{Implemented and evaluated \textbf{K-means clustering} using \textbf{PyTorch} and \textbf{Scikit-Learn} on 2D data, involving data preprocessing, model training, and performance comparison.}
+      \resumeItemListEnd
+% -----------ECE421 LABS END-----------
+
+  \resumeSubHeadingListEnd
+  
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \vspace{-5pt}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gym Reservation Bot} $|$ \emph{Python, Selenium, Google Cloud Console}}{January 2021}
+%           \resumeItemListStart
+%             \resumeItem{Developed an automatic bot using Python and Google Cloud Console to register myself for a timeslot at my school gym.}
+%             \resumeItem{Implemented Selenium to create an instance of Chrome in order to interact with the correct elements of the web page.}
+%             \resumeItem{Created a Linux virtual machine to run on Google Cloud so that the program is able to run everyday from the cloud.}
+%             \resumeItem{Used Cron to schedule the program to execute automatically at 11 AM every morning so a reservation is made for me.}
+%           \resumeItemListEnd
+%           \vspace{-13pt}
+%       \resumeProjectHeading
+%           {\textbf{Ticket Price Calculator App} $|$ \emph{Java, Android Studio}}{November 2020}
+%           \resumeItemListStart
+%             \resumeItem{Created an Android application using Java and Android Studio to calculate ticket prices for trips to museums in NYC.}
+%             \resumeItem{Processed user inputted information in the back-end of the app to return a subtotal price based on the tickets selected.}
+%             \resumeItem{Utilized the layout editor to create a UI for the application in order to allow different scenes to interact with each other.}
+%           \resumeItemListEnd 
+%           \vspace{-13pt}
+%           \resumeProjectHeading
+%           {\textbf{Transaction Management GUI} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+%           \resumeItemListStart
+%             \resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+%             \resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+%             \resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+%           \resumeItemListEnd 
+%     \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+
+
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%             \resumeItemListStart
+%                 \resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%                 \resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%                 \resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
+\end{document}
